@@ -29,3 +29,27 @@ body {
     border: none;
     outline: none;
 }
+
+.btn p {
+    margin-right: 40px;
+    transform: skew(-20deg);
+    transition: all 0.4s;
+}
+
+.btn::before , .btn::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background: #ecf2ff;
+
+    height: 100%;
+    transform: skewX(-20deg);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.btn::before {
+    left: 0;
+    width: 79%;
+    z-index: -1;
+}
