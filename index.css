@@ -53,3 +53,14 @@ body {
     width: 79%;
     z-index: -1;
 }
+
+.btn::after {
+    right: 0;
+    width: 19%;
+    z-index: -2;
+}
+
+.btn:hover::before {
+    transform: translateY(-10px) skewX(-10deg);
+    box-shadow: 0 0 20px;
+}
